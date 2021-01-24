@@ -7,3 +7,110 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  font-size: 16px;
+  background-color: grey;
+  color: seashell;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black; /*SCSC*/
+  background-color: slategray;
+  width: 100%;
+  padding: 0 1.5rem;
+  position: fixed;
+  max-height: 7rem;
+  z-index: 50;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+/* main-nav which is inside the header */
+
+#main-nav {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#main-nav p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-width: 90px;
+  max-height: 1.4rem;
+  border-right: 1px solid black;
+  display: inline-block;
+}
+
+#main-nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* ---- */
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid blue; /*SCSC*/
+  position: relative;
+  top: 8rem;
+  display: grid;
+  min-height: 1600px;
+  grid-template-columns: 1fr 200px; /* 200px is for the social media */
+  grid-template-rows: 3fr repeat(4, 5fr);
+  grid-gap: 20px 10px;
+}
+
+#home, #history, #twitter, #events, #instagram, #images, #members {
+  background-color: royalblue; /*SCSC just to get borders while I work it out*/
+  border: 1px solid blue; /*SCSC just to get borders while I work it out*/
+}
+
+/* home */
+#home {
+
+  grid-column: 1 / -1;
+}
+
+#home h2 {
+  font-size: 3rem;
+}
+
+/* ---- */
+
+/* history */
+
+/* ---- */
+
+/* twitter aside */
+
+
+/* ---- */
+
+/* events */
+
+/* ---- */
+
+/* instagram aside */
+
+/* ---- */
+
+/* images */
+#images {
+  grid-column: 1 / -1;
+}
+/* ---- */
+
+/* members */
+#members {
+  grid-column: 1 / -1;
+}
+/* ---- */
